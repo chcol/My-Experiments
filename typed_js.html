@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Typed.js Demo</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #1e1e1e;
+      color: #00ffcc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    #typed-output {
+      font-size: 1.8em;
+      border-right: 2px solid #00ffcc;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  </style>
+  <!-- 引入 Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+  <h1>🎉 Typed.js 打字效果演示</h1>
+  <div id="typed-output"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed("#typed-output", {
+        strings: [
+          "你好，欢迎来到打字机的世界！",
+          "这是一个动态文字效果演示。",
+          "使用 Typed.js，简单又酷炫。",
+          "你也可以加入你自己的文字哦！"
+        ],
+        typeSpeed: 60,
+        backSpeed: 30,
+        backDelay: 1500,
+        startDelay: 500,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
+      });
+    });
+  </script>
+
+</body>
+</html>
