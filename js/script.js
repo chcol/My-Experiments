@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   new Typed("#typed-output", {
 	strings: [
-	  "你好，欢迎来到打字机的世界！",
-	  "这是一个动态文字效果演示。",
-	  "使用 Typed.js，简单又酷炫。",
-	  "你也可以加入你自己的文字哦！"
+	  "你好，欢迎来到chcol的世界！",
+	  "这里会丢入很多有意思的东西。",
+	  "虽然不频繁丢入。",
+	  "但把时间拉长，会有的，一切都会有的"
 	],
 	typeSpeed: 60,
 	backSpeed: 30,
