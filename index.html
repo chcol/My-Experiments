@@ -26,12 +26,22 @@
       overflow: hidden;
     }
     /* 新增的版权部分样式 */
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      text-align: center;
-      font-size: 1em;
-      color: #000000;
+    /* 针对黑暗模式的样式 */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #ffffff; /* 黑暗模式下文字为白色 */
+      }
+      .footer {
+        color: #ffffff; /* 黑暗模式下版权文字为白色 */
+      }
+    }
+
+    /* 针对白天模式的样式 */
+    @media (prefers-color-scheme: light) {
+      .footer {
+        color: #000000; /* 白天模式下版权文字为黑色 */
+      }
     }
     
   </style>
