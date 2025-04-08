@@ -2,86 +2,20 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>Typed.js Demo</title>
-  <style>
-    body {
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #1e1e1e;
-      color: #00ffcc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-    #typed-output {
-      font-size: 1.8em;
-      border-right: 2px solid #00ffcc;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    /* 新增的版权部分样式 */
-    .footer {
-      position: absolute; /* 确保其固定在页面的最下方 */
-      bottom: 20px; /* 距离页面底部的距离 */
-      text-align: center;
-      font-size: 1em;
-      color: #000000; /* 默认黑色 */
-      width: 100%; /* 使版权文本居中 */
-    }
-
-    /* 针对黑暗模式的样式 */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #121212;
-        color: #ffffff; /* 黑暗模式下文字为白色 */
-      }
-      .footer {
-        color: #ffffff; /* 黑暗模式下版权文字为白色 */
-      }
-    }
-
-    /* 针对白天模式的样式 */
-    @media (prefers-color-scheme: light) {
-      .footer {
-        color: #000000; /* 白天模式下版权文字为黑色 */
-      }
-    }
-  </style>
-  <!-- 引入 Typed.js -->
+  <title>大杂烩，朋友</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 注意：先引入 Typed.js，再引入你的脚本 -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/script.js" defer></script> <!-- 用 defer 避免阻塞 -->
 </head>
 <body>
 
-  <h1>🎉 Typed.js 打字效果演示</h1>
-  <div id="typed-output"></div>
+  <div class="container">
+    <h1>🎉 Typed.js 打字效果演示</h1>
+    <div id="typed-output"></div>
+  </div>
 
   <div class="footer">© 2025/4/8 chcol</div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      new Typed("#typed-output", {
-        strings: [
-          "你好，欢迎来到打字机的世界！",
-          "这是一个动态文字效果演示。",
-          "使用 Typed.js，简单又酷炫。",
-          "你也可以加入你自己的文字哦！"
-        ],
-        typeSpeed: 60,
-        backSpeed: 30,
-        backDelay: 1500,
-        startDelay: 500,
-        loop: true,
-        showCursor: true,
-        cursorChar: '|'
-      });
-    });
-  </script>
 
 </body>
 </html>

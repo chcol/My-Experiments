@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  color: #00ffcc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#typed-output {
+  font-size: 1.8em;
+  border-right: 2px solid #00ffcc;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* 版权信息样式，固定在页面底部 */
+.footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  color: #000000;
+}
+
+/* 黑暗模式 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  .footer {
+    color: #ffffff;
+  }
+}
+
+/* 白天模式 */
+@media (prefers-color-scheme: light) {
+  .footer {
+    color: #000000;
+  }
+}
