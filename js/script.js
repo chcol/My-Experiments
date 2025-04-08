@@ -15,3 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	cursorChar: '|'
   });
 });
+
+// 初始化 VanillaTilt
+VanillaTilt.init(document.querySelectorAll(".tilt-container"), {
+	max: 25, // 最大倾斜角度
+	speed: 400, // 动画速度
+	scale: 1.1, // 鼠标悬停时放大的比例
+	glare: true, // 启用光晕效果s
+	"max-glare": 0.5 // 光晕最大亮度
+});
